@@ -11,11 +11,40 @@
         }
 
         #nav-bar {
+          height: 60px;
+          width: 100%;
+          background-color: navy;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          position: fixed;
+          top: 0;
+          left: 0;
+        }
 
+        #links {
+          width: 28%;
+          margin-right: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
         }
 
         .nav-link {
+          font-size: 25px;
           text-decoration: none;
+          color: white;
+        }
+
+        .nav-link:hover {
+          color: #e6b800;
+        }
+
+        #about {
+          margin-top: 61px;
+          height: 100px;
+          background-color: #f0f5f5;
         }
       </style>
 
@@ -23,10 +52,10 @@
 
     <body id="main">
       <header id="nav-bar">
-        <nav>
-          <a class="nav-link" href="about"> About </a>
-          <a class="nav-link" href="projects"> Projects </a>
-          <a class="nav-link" href="contact"> Contact Me </a>
+        <nav id="links">
+          <a class="nav-link" href="#about"> About </a>
+          <a class="nav-link" href="#projects"> Projects </a>
+          <a class="nav-link" href="#contact"> Contact Me </a>
         </nav>
       </header>
 

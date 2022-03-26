@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> Bengals Fan Survey </title>
+			<meta charset="UTF-8">
+			<meta name="description" content="A website devoted created to poll Americans on their allegiance to the Cincinnati Bengals">
+			<link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet" type="text/css">
+      <style>
+        #main {
+          background: url(https://us.123rf.com/450wm/igoun/igoun1808/igoun180800149/111881607-zebra-stripes-pattern-zebra-print-animal-skin-tiger-stripes-abstract-pattern-line-background-fabric-.jpg?ver=6);
+          background-color: rgba(255, 255, 255, 0.9);
+          background-blend-mode: overlay;
+
+          text-align: center;
+        }
+        #header {
+          padding-top: 25px;
+          line-height: 30px;
+        }
+        #title {
+          font-family: "Bebas Neue";
+          font-size: 60px;
+          color: #ff751a;
+          text-shadow: 1px 1px 0px black;
+          text-align: center;
+        }
+
+        #description {
+          font-family: helvetica;
+          font-size: 31px;
+          color: #000000;
+          text-align: center;
+          margin-top: 0px;
+        }
+
+        #survey {
+          background-color: rgba(0, 0, 0, 0.6);
+          background-blend-mode: overlay;
+          border-radius: 5px;
+          margin-top: 50px;
+          padding-top: 20px;
+          padding-bottom: 15px;
+          padding-left: 40px;
+          line-height: 38px;
+          text-align: left;
+          width: 65%;
+          margin: auto;
+          font-family: helvetica;
+          font-size: 23px;
+          color: white;
+        }
+
+        input {
+          width: 92%;
+          padding: 6px 10px;
+          margin-bottom: 22px;
+          border: 2px solid rgba(0, 0, 0, 0.3);
+          border-radius: 3px;
+          display: inline;
+          font-size: 20px;
+          font-family: helvetica;
+        }
+
+        #optional {
+          font-size: 18px;
+        }
+
+        #submit {
+          background-color: #ff751a;
+          border: 2px solid black;
+        }
+
+        input[type="radio"] {
+          width: auto;
+          display: inline;
+          margin: auto;
+        }
+
+        #not-sure {
+          margin-bottom: 22px;
+        }
+
+        #dropdown {
+          width: 94%;
+          padding: 6px 10px;
+          margin-bottom: 22px;
+          border: 2px solid rgba(0, 0, 0, 0.3);
+          border-radius: 3px;
+          display: inline;
+          font-size: 20px;
+          font-family: helvetica;
+        }
+
+        input[type="checkbox"] {
+          width: auto;
+          display: inline;
+          margin: auto;
+        }
+
+        #comments {
+          width: 92%;
+          padding: 6px 10px;
+          margin-bottom: 22px;
+          border: 2px solid rgba(0, 0, 0, 0.3);
+          border-radius: 3px;
+          display: inline;
+          font-size: 20px;
+          font-family: helvetica;
+        }
+
+        #secondary {
+          margin-bottom: 22px;
+        }
+      </style>
+    </head>
+
+    <body id="main">
+      <div class="stripes">
+        <div id="header">
+          <h1 id="title">Cincinnati Bengals Fandom Survey</h1>
+          <p id="description"><i> Thank you for taking time to help grow this community. WHO DEY!!</i></p>
+        </div>
+        <div id="survey">
+          <form id="survey-form">
+            <label id="name-label" for="name"> Name </label><br>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            <label id="email-label" for="email"> Email </label><br>
+            <input id="email" type="email" placeholder="Enter your Email" required>
+            <label id="number-label" for="number"> Age <span id="optional"> (optional) </span> </label><br>
+            <input id="number" type="number" placeholder="Age" min="1" max="130">
+            <label for="yes"> Are you a Bengals fan? <br/>
+              <input id="yes" type="radio" name="fan" value="yes" required> Yes
+            </label> <br/>
+            <label for="no">
+              <input id="no" type="radio" name="fan" value="no" required> No
+            </label> <br/>
+            <label for="not-sure">
+              <input id="not-sure" type="radio" name="fan" value="not-sure" required> Not Sure
+            </label>
+            <br/><label id="dropdown-label" for="dropdown"> Who is your favorite Bengal player? </label><br/>
+              <select id="dropdown">
+                <option value="Select Player" disabled selected>Select Player</option>
+                <option value="Joe Burrow">Joe Burrow</option>
+                <option value="Ja'marr Chase">Ja'marr Chase</option>
+                <option value="CJ Uzomah">CJ Uzomah</option>
+                <option value="Jessie Bates">Jessie Bates</option>
+                <option value="Joe Mixon">Joe Mixon</option>
+                <option value="Chidobe Awuzie">Chidobe Awuzie</option>
+                <option value="Jessie Bates">Jessie Bates</option>
+              </select><br/>
+            <label for="OL"> Position(s) you would target in the NFL Draft/Free Agency? <span id="optional"> (Check all that apply)</span><br/>
+              <input id="OL" type="checkbox" name="position" value="OL"> Offensive Line
+            </label> <br/>
+            <label for="WR">
+              <input id="WR" type="checkbox" name="position" value="WR"> Wide Receiver
+            </label> <br/>
+            <label for="DL">
+              <input id="DL" type="checkbox" name="position" value="DL"> Defensive Line
+            </label> <br/>
+            <label for="secondary">
+              <input id="secondary" type="checkbox" name="position" value="Secondary"> Secondary
+            </label> <br/>
+            <label for="comments"> Please submit any other comments, fan stories, or messages below!</label><br/>
+            <textarea id="comments"> Enter your comments here... </textarea>
+            <input id="submit" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </body>
+  </html>

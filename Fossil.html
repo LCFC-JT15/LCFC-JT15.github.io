@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> Paleontology Unlimited </title>
+			<meta charset="UTF-8">
+			<meta name="description" content="A website to market and sell premium fossils to any collector">
+
+      <style>
+        #header {
+          background-color: #b8b894;
+          color: black;
+          font-family: papyrus;
+          height: 80px;
+          margin-left: -8px;
+          position: fixed;
+          top: 0px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 1;
+        }
+
+        #header-img {
+          height: 100%;
+          margin-left: 2%;
+          display: inline;
+        }
+
+        h5 {
+          font-size: 35px;
+          width: 100%;
+          margin-left: 1%;
+        }
+
+        #nav-bar {
+          width: 54%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        .nav-link {
+          color: black;
+          margin-right: 10%;
+          font-size: 22px;
+          text-decoration: none;
+        }
+
+        .nav-link:hover {
+          color: #808080;
+        }
+
+        #main {
+          margin-top: 100px;
+          font-family: helvetica;
+        }
+
+        #intro {
+          text-align: center;
+          width: 40%;
+          margin: auto;
+        }
+
+        #email {
+          width: 60%;
+          font-family: helvetica;
+          font-size: 90%;
+          border: 1px solid black;
+          border-radius: 3px;
+          padding: 0.9% 1%;
+          margin-bottom: 15px;
+        }
+
+        #submit {
+          font-family: helvetica;
+          font-size: 90%;
+          border: 1px solid black;
+          border-radius: 3px;
+          padding: 0.9% 1%;
+        }
+
+        #submit:hover {
+          background-color: #cceeff;
+        }
+
+        #features {
+          margin-top: 20px;
+          margin-bottom: 50px;
+        }
+
+        .container {
+          padding: 0px 10px 25px 10px;
+          border-color: black;
+          border-style: dashed;
+          border-size: 2px;
+          border-radius: 4px;
+          height: 320px;
+          width: 64%;
+          margin: auto;
+          display: grid;
+          grid-template-rows: 90px 90px 90px;
+          grid-row-gap: 20px;
+        }
+
+        .grid-title {
+          font-size: 30px;
+          margin-bottom: -1.5%;
+        }
+
+        .grid-text {
+          font-size: 20px;
+          line-height: 30px;
+        }
+
+        a {
+          color: black;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: teal;
+        }
+
+        .vid-container {
+          position: relative;
+          overflow: hidden;
+          padding-top: 56.25%;
+          width: 60%;
+          margin: auto;
+        }
+
+        .resp-vid {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width:100%;
+          height:100%;
+          border: 0;
+          z-index: 0;
+        }
+
+        #packages {
+          margin-top: 50px;
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .pkg {
+          margin:auto;
+          border: 2px dashed green;
+          border-radius: 5px;
+          padding: 0px 5px 5px 5px;
+          background-image: linear-gradient(135deg, #d6f5d6, #f2f2f2, #999999)
+        }
+
+        .select-btn {
+          font-family: helvetica;
+          font-size: 17px;
+          border: 1px solid black;
+          border-radius: 3px;
+          padding: 0.9% 1%;
+        }
+
+        .select-btn:hover {
+          background-color: #cceeff
+        }
+
+        @media (max-width: 1000px) {
+          h5 {font-size: 24px;}
+          .nav-link {font-size: 15px; margin-right: 4%;}
+          h2 {font-size: 18px;}
+          input {font-size: 17px;}
+          #features {margin-bottom: 40px;}
+          .container {grid-template-rows: 63px 63px 63px; height: 235px;}
+          .grid-title {font-size: 18px; margin-bottom: -2%;}
+          .grid-text {font-size: 12px; line-height: 18px;}
+        }
+      </style>
+    </head>
+
+    <header id="header">
+      <img id="header-img" alt="dino" src="https://www.pngall.com/wp-content/uploads/5/Fossils-PNG-High-Quality-Image.png">
+      <h5 class="text"> Paleontology Unlimited </h5>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features"> Features </a>
+        <a class="nav-link" href="#learn"> Learn </a>
+        <a class="nav-link" href="#packages"> Packages </a>
+      </nav>
+    </header>
+
+  <body id="main">
+
+    <section id="intro">
+      <h2 id="description" class="text"> Impeccable finds for any collection </h2>
+      <form id="form" action=" https://www.freecodecamp.com/email-submit">
+        <input id="email" name="email" class="text" type="email" placeholder="Enter email here"><br/>
+        <input id="submit" class="text" type="submit" value="Get Your's Today">
+      </form>
+    </section>
+
+  <hr style="width:50%";>
+
+    <section id="features">
+      <div class="container">
+        <div id="ethic-text"><h2 class="grid-title" style="color: green">Ethically Sourced</h2><p class="grid-text"> Our fossils are recovered by volunteers and employees across the globe. We also utilize low-carbon emission transport options to reduce our carbon footprint.</p>
+        </div>
+        <div id="quality-text"><h2 class="grid-title" style="color: green">High Quality</h2><p class="grid-text">Our range of specimens vary in quality from beginner collector to museum display, and we guarantee happiness in every package.</p>
+        </div>
+        <div id="custom-text"><h2 class="grid-title" style="color: green">Custom Packages</h2><p class="grid-text">No matter what style of collector you are, there is a <a href="#packages"><b>package</b></a> for everyone!</p>
+        </div>
+    </section>
+
+    <section class="vid-container" id="learn">
+      <iframe class="resp-vid" id="video" src="https://www.youtube.com/embed/bRuSmxJo_iA" alt="What are fossils?" title="Fossil 101" frameborder="0" allowfullscreen>
+      </iframe>
+    </section>
+
+    <section id="packages">
+      <div id="cambrian" class="pkg">
+        <h2>Cambrian</h2>
+        <h3>Starts at $300</h3>
+        <p><b>Contains:</b> Trilobites & Brachiopods</p>
+        <p><b>Classes:</b> Hobbyist, Enthusiast, & Smithsonian<p>
+        <button type="button" class="select-btn" onclick="alert"('Success!')>Select</button>
+      </div>
+
+      <div id="devonian" class="pkg">
+        <h2>Devonian</h2>
+        <h3>Starts at $700</h3>
+        <p><b>Contains:</b> Crinoids, Armored Fish, & Dunkleosteus</p>
+        <p><b>Classes:</b> Hobbyist, Enthusiast, & Smithsonian<p>
+        <button type="button" class="select-btn" onclick="alert"('Success!')>Select</button>
+      </div>
+
+      <div id="cretaceous" class="pkg">
+        <h2>Cretaceous</h2>
+        <h3>Starts at $1000</h3>
+        <p><b>Contains:</b> T-rex, Triceratops, & Other Dinosaurs</p>
+        <p><b>Classes:</b> Hobbyist, Enthusiast, & Smithsonian<p>
+        <button type="button" class="select-btn" onclick="alert"('Success!')>Select</button>
+      </div>
+
+    <section>
+  </body>
+</html>

@@ -122,20 +122,15 @@
           color: teal;
         }
 
-        .vid-container {
-          position: relative;
-          overflow: hidden;
-          padding-top: 56.25%;
-          width: 60%;
-          margin: auto;
-        }
+				#learn {
+					text-align: center;
+				}
 
         .resp-vid {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width:100%;
-          height:100%;
+					overflow: hidden;
+					text-align: center;
+					height: 315px;
+					width: 560px;
           border: 0;
           z-index: 0;
         }
@@ -193,11 +188,15 @@
 				@media (max-width: 650px) {
 					#nav-bar {display: flex; flex-direction: column; margin-bottom: 10px;}
 				}
+
+				@media (max-width: 560px) {
+					#video {height: 225px; width: 400px;}
+				}
       </style>
     </head>
 
     <header id="header">
-      <img id="header-img" alt="dino" src="https://www.pngall.com/wp-content/uploads/5/Fossils-PNG-High-Quality-Image.png">
+      <a id="top" class="nav-link" href="#header"><img id="header-img" alt="dino" src="https://www.pngall.com/wp-content/uploads/5/Fossils-PNG-High-Quality-Image.png"></a>
       <h5 class="text"> Paleontology Unlimited </h5>
       <nav id="nav-bar">
         <a class="nav-link" href="#features"> Features </a>

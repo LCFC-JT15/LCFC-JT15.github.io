@@ -48,10 +48,18 @@
           color: #e6b800;
         }
 
+        @media (max-width: 1000px) {
+          .nav-link {font-size: 18px;}
+        }
+
+        @media (max-width: 800px) {
+          .nav-link {font-size: 12px;}
+        }
+
         #about {
           margin: 61px -10px 0px -10px;
-          height: 400px;
           background-color: #fff0b3;
+          height: 100vh;
           text-align: center;
           border-bottom: 2px black double;
         }
@@ -70,33 +78,44 @@
 
         #projects {
           text-align: center;
-          margin: 0px -10px 0px -10px;
+          margin: 0px 8px 15px 8px;
           padding: 20px;
           color: black;
-          height: 600px;
           background-color: #ecf2f9;
           border-bottom: 2px black double;
         }
 
         #project-title{
           font-size: 50px;
-          margin-bottom: 5px;
+          max-width: 640px;
+          margin: 30px auto 45px auto;
+          border-bottom: 0.2rem solid black;
         }
 
         #pictures {
-          margin: auto;
-          width: 80%;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items:center;
+          width: 100%;
+          max-width: 1280px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          grid-gap: 3rem;
         }
 
         .project-img {
-          height: 10em;
-          margin: 20px 10px 20px 10px;
-          box-shadow: 10px 10px 5px #ccc;
+          height: calc(100% - 5rem);
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .proj-links:hover {
+          transform: scale(1.15);
+          transition: transform 0.3s ease-out;
+        }
+
+        #proj-name {
+          background-color: #fff0b3;
+          color: navy;
+          padding: 1rem;
         }
 
         #contact {
@@ -104,13 +123,46 @@
           background-color: #595959;
           color: white;
           text-align: center;
-          height: 60vh;
+          height: 65vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
         }
 
-        contact-header {
-          font-size: 6em;
+        #contact-header {
+          font-size: 3rem;
         }
 
+        .contact-links {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex: wrap;
+          width: 100%;
+          max-width: 900px;
+
+        }
+
+        .contact-details {
+          font-size: 1.5em;
+          color: white;
+          text-shadow: 2px 2px 1px #1F1F1F;
+          transition: transform 0.3s ease-out;
+        }
+
+        .contact-details:hover {
+          transform: translateY(8px);
+        }
+
+        @media (max-width: 760px) {
+          #contact-header {font-size: 2rem;}
+        }
+
+        @media (max-width: 540px) {
+          .contact-links {display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+          .contact-details:hover {transform: translateX(8px); transition: transform 0.3s ease-out;}
+        }
       </style>
       <link
         rel="stylesheet"
@@ -139,17 +191,22 @@
 
       <section id="projects">
         <h1 id="project-title">Here is what I've built</h1>
-        <hr width="50%" height="3px" color="black">
         <div id="pictures">
-          <a href="Projects/Vardy.html" target="_blank"><img class="project-img" src="Images/VardyPic.jpg"></a>
-          <a href="Projects/Survey.html" target="_blank"><img class="project-img" src="Images/SurveyPic.jpg"></a>
-          <a href="Projects/JS.html" target="_blank"><img class="project-img" src="Images/JSPic.jpg"></a>
-          <a href="Projects/Fossil.html" target="_blank"><img class="project-img" src="Images/FossilPic.jpg"></a>
+          <a class="proj-links" href="Projects/Vardy.html" target="_blank"><img class="project-img" src="Images/VardyPic.jpg">
+          <p id="proj-name">Tribute Page</p></a>
+          <a class="proj-links" href="Projects/Survey.html" target="_blank"><img class="project-img" src="Images/SurveyPic.jpg">
+          <p id="proj-name">Bengals Fan Survey</p></a>
+          <a class="proj-links" href="Projects/JS.html" target="_blank"><img class="project-img" src="Images/JSPic.jpg">
+          <p id="proj-name">JS Technical Document</p></a>
+          <a class="proj-links" href="Projects/Fossil.html" target="_blank"><img class="project-img" src="Images/FossilPic.jpg">
+          <p id="proj-name">Product Landing Page<p></a>
         </div>
       </section>
 
       <section id="contact">
-        <h1 id="contact-header">Let's connect...</h1>
+        <div id="contact-header">
+          <h1>Let's connect...</h1>
+        </div>
         <div class="contact-links">
           <a
             href="https://www.facebook.com/joseph.toebbe/"

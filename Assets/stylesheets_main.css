@@ -51,7 +51,7 @@
   }
 
   #about {
-    margin: 61px -10px 0px -10px;
+    margin: 59px -10px 0px -10px;
     background-color: #fff0b3;
     height: 100vh;
     text-align: center;
@@ -72,8 +72,8 @@
 
   #projects {
     text-align: center;
-    margin: 0px -8px 15px -8px;
-    padding: 20px;
+    margin: 0px -10px 15px -10px;
+    padding: 20px 40px 20px 40px;
     color: black;
     background-color: #ecf2f9;
     border-bottom: 2px black double;
